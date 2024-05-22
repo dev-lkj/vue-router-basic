@@ -18,11 +18,11 @@
 <script>
 export default {
   // emits: ['set-page'],
-  methods: {
+  // methods: {
     // setActivePage(page) {
     //   this.$emit('set-page', page);
     // },
-  },
+  // },
 };
 </script>
 

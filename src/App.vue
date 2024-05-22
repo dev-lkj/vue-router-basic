@@ -1,9 +1,13 @@
 <template>
-  <the-navigation @set-page="setActivePage"></the-navigation>
+  <!-- <the-navigation @set-page="setActivePage"></the-navigation> -->
+  <the-navigation ></the-navigation>
   <main>
     <router-view></router-view>
     <!-- <component :is="activePage"></component> -->
   </main>
+  <footer>
+    <router-view name="footer"></router-view>
+  </footer>
 </template>
 
 <script>
@@ -40,11 +44,11 @@ export default {
       users: this.users,
     };
   },
-  methods: {
+  // methods: {
     // setActivePage(page) {
     //   this.activePage = page;
     // },
-  },
+  // },
 };
 </script>
 
